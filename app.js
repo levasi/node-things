@@ -22,11 +22,11 @@ app.post('/upload', function (req, res) {
     file.mv(uploadpath, function (err) {
       if (err) {
         console.log("File Upload Failed", name, err);
-        res.send("Error Occured!")
+        // res.send("Error Occured!")
       }
       else {
         console.log("File Uploaded", name);
-        res.send('Done! Uploading files')
+        // res.send('Done! Uploading files')
       }
     });
   }
